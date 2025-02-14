@@ -1,0 +1,94 @@
+/* Estilização geral */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+	background-color: #FBBDD4;
+}
+
+
+/* Capa */
+section.text-center {
+    position: relative;
+    height: 400px;
+    background: url('https://picsum.photos/1920/600?random=1') center/cover no-repeat;
+}
+
+section.text-center button {
+    position: absolute;
+    bottom: 20px;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    background: url('https://picsum.photos/200/60?random=3') center/cover no-repeat;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+section.text-center button:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+section.text-center button {
+    position: absolute;
+    bottom: 20px;
+}
+
+/* Chamada para ação */
+section.text-center.text-white {
+    padding: 60px 20px;
+    background-color: #add8e6;
+}
+
+/* Sobre Mim */
+#sobre img {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+}
+
+/* Background Divisão */
+.background-divisao {
+ height: 600px;
+}
+
+.divisao {
+	height: 100%;
+	padding: 600px;
+	color: white;
+}
+
+/* Footer */
+footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+}
+
+footer ul {
+    padding: 0;
+    list-style: none;
+}
+
+footer p {
+    margin-top: 10px;
+}
+
+footer a img {
+    transition: transform 0.3s ease-in-out;
+}
+
+footer a img:hover {
+    transform: scale(1.1);
+}
+
