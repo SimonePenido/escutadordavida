@@ -3,6 +3,11 @@ body {
     font-family: Arial, sans-serif;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 /* Navbar */
 .navbar {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -10,6 +15,12 @@ body {
 
 .navbar-brand {
 	background-color: #FBBDD4;
+}
+
+.navbar-brand img {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
 }
 
 
@@ -50,11 +61,19 @@ section.text-center.text-white {
     background-color: #add8e6;
 }
 
+section.text-center.text-black {
+    font-size: 40px;
+color: rgba(27, 27, 27, 0.897);
+}
 /* Sobre Mim */
 #sobre img {
     border-radius: 10px;
     width: 100%;
     height: auto;
+}
+
+.sobre {
+    background-color: #918f8f;
 }
 
 /* Background Divisão */
@@ -77,11 +96,15 @@ footer {
 
 footer ul {
     padding: 0;
-    list-style: none;
-}
+    }
 
 footer p {
     margin-top: 10px;
+}
+
+.mail {
+    text-decoration: none;
+
 }
 
 footer a img {
