@@ -18,65 +18,96 @@ p {
 /* Navbar */
 .navbar {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
 }
 
+/* Logo à direita */
 .navbar-brand {
-	background-color: #FBBDD4;
+    background-color: #FBBDD4;
+    padding: 8px;
+    border-radius: 50%;
 }
 
-.navbar-brand img {
-    width: 10px;
-    height: 10px;
+.logo-img {
+    width: 40px; /* Ajustando tamanho da logo */
+    height: 40px;
     border-radius: 50%;
+}
+
+/* Menu alinhado à esquerda */
+.navbar-nav {
+    gap: 15px; /* Adiciona espaçamento entre os itens */
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 991px) {
+    .navbar .container {
+        flex-direction: row-reverse; /* Mantém a logo à direita no mobile */
+    }
+    .navbar-nav {
+        text-align: left;
+    }
 }
 
 
 /* Capa */
-section.text-center {
-    position: relative;
-    height: 400px;
-    background: url('https://picsum.photos/1920/600?random=1') center/cover no-repeat;
+.d-flex.align-items-end {
+    min-height: 100vh;
+    padding-bottom: 5%;
 }
 
-section.text-center button {
-    position: absolute;
-    bottom: 20px;
-    padding: 15px 30px;
-    font-size: 18px;
-    font-weight: bold;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    background: url('https://picsum.photos/200/60?random=3') center/cover no-repeat;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s, opacity 0.3s;
+/* Animação do botão */
+.animate-button {
+    transition: transform 0.3s ease-in-out, background 0.3s;
 }
 
-section.text-center button:hover {
-    transform: scale(1.05);
-    opacity: 0.9;
+.btn-primary {
+    background-color: #0713F2;
+
 }
 
-section.text-center button {
-    position: absolute;
-    bottom: 20px;
+.animate-button:hover {
+    transform: scale(1.1);
+    background: #ffc107 !important;
+    color: black !important;
 }
 
-/* Chamada para ação */
-section.text-center.text-white {
-    padding: 100px 50px;
-    background-color: #add8e6;
-    margin: 3em;
-}
+    /* Chamada para ação */
+    .text-center.text-white {
+        padding: 120px 60px; 
+        background-color: #7ba2af;
+        margin: 4em 2em; 
+        display: flex;
+        flex-direction: column;
+        gap: 20px; 
+        text-align: center;
+    }
 
-section.text-center.text-black {
-    font-size: 40px;
-color: rgba(27, 27, 27, 0.897);
-}
+    .animate-button {
+        transition: transform 0.3s ease-in-out, background 0.3s;
+    }
+
+    .animate-button:hover {
+        transform: scale(1.1);
+        background: #ffc107 !important;
+        color: black !important;
+    }
+
+    @media (max-width: 768px) {
+        .text-center.text-white {
+            padding: 80px 30px; 
+            margin: 2em;
+        }
+    }
+
 /* Sobre Mim */
+#sobre {
+    padding: 100px 50px; 
+}
+
 #sobre img {
     border-radius: 10px;
-    width: 100%;
+    max-width: 90%; 
     height: auto;
 }
 
@@ -84,15 +115,42 @@ color: rgba(27, 27, 27, 0.897);
     background-color: #918f8f;
 }
 
+#sobre .row {
+    margin-bottom: 30px;
+}
+
+
 /* Background Divisão */
 .background-divisao {
- height: 600px;
+    height: 600px;
 }
 
 .divisao {
-	height: 100%;
-	padding: 600px;
-	color: white;
+    height: 100%;
+    padding: 600px;
+    color: white;
+}
+
+/* Vídeo de Apresentação */
+#video {
+    padding: 120px 50px;
+}
+
+#video .row {
+    margin-bottom: 40px; 
+}
+
+#video p {
+    line-height: 1.8; 
+}
+
+#video .ratio {
+    max-width: 90%; 
+    margin: auto;
+}
+
+#video iframe {
+    border-radius: 10px;
 }
 
 /* Footer */
@@ -104,7 +162,7 @@ footer {
 
 footer ul {
     padding: 0;
-    }
+}
 
 footer p {
     margin-top: 10px;
@@ -122,5 +180,3 @@ footer a img {
 footer a img:hover {
     transform: scale(1.1);
 }
-
-
