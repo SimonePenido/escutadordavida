@@ -14,7 +14,8 @@ O **Escutador da Vida** é o site profissional do **psicólogo Henrique Gheno Zi
 
 📍 **Demonstrações**:  
 🔗 [GitHub Pages](https://simonepenido.github.io/escutadordavida/)  
-🔗 [Netlify](https://escutadordavida.netlify.app)  
+🔗 [Netlify](https://escutadordavida.netlify.app)
+🔗 [Vercel](https://escutadordavida.vercel.app/)  
 
 ---
 
